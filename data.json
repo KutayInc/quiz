@@ -1,0 +1,57 @@
+[
+  {
+    "soru": "İsviçrenin başkenti neresidir",
+    "secenekler": ["Bern", "Zürih", "Basel", "Cenevre"],
+    "dogru_cevap": "Bern"
+  },
+  {
+    "soru": "Dünyanın en yüksek dağı hangisidir?",
+    "secenekler": ["Everest", "K2", "Lhotse", "Kilimanjaro"],
+    "dogru_cevap": "Everest"
+  },
+  {
+    "soru": "İstanbulun Fethi hangi yıl yaşanmıştır?",
+    "secenekler": ["1543", "1453", "1299", "1451"],
+    "dogru_cevap": "1453"
+  },
+  {
+    "soru": "Hangisi bir yazılım dili değildir?",
+    "secenekler": ["JavaScript", "Golang", "C++", "After Effects"],
+    "dogru_cevap": "After Effects"
+  },
+  {
+    "soru": "En çok şampiyonluk yaşayan takım hangisidir?",
+    "secenekler": ["Fenerbahçe", "Beşiktaş", "Galatasaray", "Trabzonspor"],
+    "dogru_cevap": "Galatasaray"
+  },
+  {
+    "soru": "2008 Avrupa Şampiyonasında Türkiye hangi ülkeye elenmiştir?",
+    "secenekler": ["Rusya", "Almanya", "Hırvatistan", "Portekiz"],
+    "dogru_cevap": "Almanya"
+  },
+  {
+    "soru": "Pokemon dizisinde Ash karakterinin ilk pokemonu hangisidir?",
+    "secenekler": ["Charizard", "Onix", "Raichu", "Pikachu"],
+    "dogru_cevap": "Pikachu"
+  },
+  {
+    "soru": "Titanic filminin yönetmeni kimdir?",
+    "secenekler": [
+      "Steven Speilberg",
+      "Quentin Tarantino",
+      "James Cameron",
+      "Robert De Niro"
+    ],
+    "dogru_cevap": "James Cameron"
+  },
+  {
+    "soru": "Pulp Fiction, Forrest Gump ve The Shawshank Redemption hangi yıl çıkmıştır?",
+    "secenekler": ["1993", "1995", "1994", "1997"],
+    "dogru_cevap": "1994"
+  },
+  {
+    "soru": "İlk dünya kupasını hangi ülke kazanmıştır?",
+    "secenekler": ["Uruguay", "İspanya", "İngiltere", "Brezilya"],
+    "dogru_cevap": "Uruguay"
+  }
+]
