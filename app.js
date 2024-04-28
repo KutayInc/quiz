@@ -8,12 +8,15 @@ const answerA = document.getElementById("answer-a");
 const answerB = document.getElementById("answer-b");
 const answerC = document.getElementById("answer-c");
 const answerD = document.getElementById("answer-d");
+const answerArr = [answerA, answerB, answerC, answerD];
 const resultPage = document.getElementById("result-page");
 const result = document.getElementById("result");
 let score = 0;
 const scoreDiv = document.getElementById("scoreDiv");
 const showScore = document.getElementById("showScore");
 const empty = document.getElementById("empty");
+const realAnswer = document.getElementById("real-answer");
+const realAnswerh2 = document.getElementById("real-answer-h2");
 
 fetch("data.json")
   .then((response) => response.json())
@@ -46,47 +49,20 @@ function newQuestion() {
     resultPage.style.display = "none";
     empty.style.display = "flex";
   }
-  question.innerHTML = gameData[random].soru;
-  answerA.innerHTML = gameData[random].secenekler[0];
-  answerB.innerHTML = gameData[random].secenekler[1];
-  answerC.innerHTML = gameData[random].secenekler[2];
-  answerD.innerHTML = gameData[random].secenekler[3];
-  if (gameData[random].dogru_cevap === gameData[random].secenekler[0]) {
-    answerA.classList.remove("wrong");
-    answerA.classList.add("correct");
-    answerB.classList.add("wrong");
-    answerB.classList.remove("correct");
-    answerC.classList.add("wrong");
-    answerC.classList.remove("correct");
-    answerD.classList.add("wrong");
-    answerD.classList.remove("correct");
-  } else if (gameData[random].dogru_cevap === gameData[random].secenekler[1]) {
-    answerA.classList.add("wrong");
-    answerA.classList.remove("correct");
-    answerB.classList.remove("wrong");
-    answerB.classList.add("correct");
-    answerC.classList.add("wrong");
-    answerC.classList.remove("correct");
-    answerD.classList.add("wrong");
-    answerD.classList.remove("correct");
-  } else if (gameData[random].dogru_cevap === gameData[random].secenekler[2]) {
-    answerA.classList.add("wrong");
-    answerA.classList.remove("correct");
-    answerB.classList.remove("correct");
-    answerB.classList.add("wrong");
-    answerC.classList.remove("wrong");
-    answerC.classList.add("correct");
-    answerD.classList.add("wrong");
-    answerD.classList.remove("correct");
-  } else if (gameData[random].dogru_cevap === gameData[random].secenekler[3]) {
-    answerA.classList.add("wrong");
-    answerA.classList.remove("correct");
-    answerB.classList.remove("correct");
-    answerB.classList.add("wrong");
-    answerC.classList.add("wrong");
-    answerC.classList.remove("correct");
-    answerD.classList.remove("wrong");
-    answerD.classList.add("correct");
+  question.innerHTML = gameData[random].question;
+  for (let i = 0; i < gameData[random].options.length; i++) {
+    answerArr[i].innerHTML = gameData[random].options[i];
+  }
+  for (let i = 0; i < gameData[random].options.length; i++) {
+    if (gameData[random].right_answer === gameData[random].options[i]) {
+      answerArr[i].classList.add("correct");
+      realAnswer.innerHTML = gameData[random].right_answer;
+      for (let j = 0; j < gameData[random].options.length; j++) {
+        if (j !== i) {
+          answerArr[j].classList.remove("correct");
+        }
+      }
+    }
   }
   gameData.splice(random, 1);
 }
@@ -113,13 +89,15 @@ function resetGame() {
 
 answers.addEventListener("click", function (e) {
   game.style.display = "none";
-  resultPage.style.display = "block";
+  resultPage.style.display = "flex";
   if (e.target.classList.contains("correct")) {
     result.innerHTML = "Doğru!";
     score++;
     showScore.innerHTML = score;
+    realAnswerh2.style.display = "none";
   } else {
     result.innerHTML = "Yanlış!";
     showScore.innerHTML = score;
+    realAnswerh2.style.display = "flex";
   }
 });

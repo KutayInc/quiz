@@ -40,6 +40,12 @@ button:hover {
   background-color: #a09cab;
 }
 
+#scoreDiv {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
 .qweqwe {
   background-color: #28282a;
   background-color: #f9f9f9;
@@ -83,6 +89,8 @@ button:hover {
 
 .result-page {
   display: none;
+  flex-direction: column;
+  align-items: center;
 }
 
 .empty {

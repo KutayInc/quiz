@@ -1,57 +1,57 @@
 [
   {
-    "soru": "İsviçrenin başkenti neresidir",
-    "secenekler": ["Bern", "Zürih", "Basel", "Cenevre"],
-    "dogru_cevap": "Bern"
+    "question": "İsviçrenin başkenti neresidir",
+    "options": ["Bern", "Zürih", "Basel", "Cenevre"],
+    "right_answer": "Bern"
   },
   {
-    "soru": "Dünyanın en yüksek dağı hangisidir?",
-    "secenekler": ["Everest", "K2", "Lhotse", "Kilimanjaro"],
-    "dogru_cevap": "Everest"
+    "question": "Dünyanın en yüksek dağı hangisidir?",
+    "options": ["Everest", "K2", "Lhotse", "Kilimanjaro"],
+    "right_answer": "Everest"
   },
   {
-    "soru": "İstanbulun Fethi hangi yıl yaşanmıştır?",
-    "secenekler": ["1543", "1453", "1299", "1451"],
-    "dogru_cevap": "1453"
+    "question": "İstanbulun Fethi hangi yıl yaşanmıştır?",
+    "options": ["1543", "1453", "1299", "1451"],
+    "right_answer": "1453"
   },
   {
-    "soru": "Hangisi bir yazılım dili değildir?",
-    "secenekler": ["JavaScript", "Golang", "C++", "After Effects"],
-    "dogru_cevap": "After Effects"
+    "question": "Hangisi bir yazılım dili değildir?",
+    "options": ["JavaScript", "Golang", "C++", "After Effects"],
+    "right_answer": "After Effects"
   },
   {
-    "soru": "En çok şampiyonluk yaşayan takım hangisidir?",
-    "secenekler": ["Fenerbahçe", "Beşiktaş", "Galatasaray", "Trabzonspor"],
-    "dogru_cevap": "Galatasaray"
+    "question": "En çok şampiyonluk yaşayan takım hangisidir?",
+    "options": ["Fenerbahçe", "Beşiktaş", "Galatasaray", "Trabzonspor"],
+    "right_answer": "Galatasaray"
   },
   {
-    "soru": "2008 Avrupa Şampiyonasında Türkiye hangi ülkeye elenmiştir?",
-    "secenekler": ["Rusya", "Almanya", "Hırvatistan", "Portekiz"],
-    "dogru_cevap": "Almanya"
+    "question": "2008 Avrupa Şampiyonasında Türkiye hangi ülkeye elenmiştir?",
+    "options": ["Rusya", "Almanya", "Hırvatistan", "Portekiz"],
+    "right_answer": "Almanya"
   },
   {
-    "soru": "Pokemon dizisinde Ash karakterinin ilk pokemonu hangisidir?",
-    "secenekler": ["Charizard", "Onix", "Raichu", "Pikachu"],
-    "dogru_cevap": "Pikachu"
+    "question": "Pokemon dizisinde Ash karakterinin ilk pokemonu hangisidir?",
+    "options": ["Charizard", "Onix", "Raichu", "Pikachu"],
+    "right_answer": "Pikachu"
   },
   {
-    "soru": "Titanic filminin yönetmeni kimdir?",
-    "secenekler": [
+    "question": "Titanic filminin yönetmeni kimdir?",
+    "options": [
       "Steven Speilberg",
       "Quentin Tarantino",
       "James Cameron",
       "Robert De Niro"
     ],
-    "dogru_cevap": "James Cameron"
+    "right_answer": "James Cameron"
   },
   {
-    "soru": "Pulp Fiction, Forrest Gump ve The Shawshank Redemption hangi yıl çıkmıştır?",
-    "secenekler": ["1993", "1995", "1994", "1997"],
-    "dogru_cevap": "1994"
+    "question": "Pulp Fiction, Forrest Gump ve The Shawshank Redemption hangi yıl çıkmıştır?",
+    "options": ["1993", "1995", "1994", "1997"],
+    "right_answer": "1994"
   },
   {
-    "soru": "İlk dünya kupasını hangi ülke kazanmıştır?",
-    "secenekler": ["Uruguay", "İspanya", "İngiltere", "Brezilya"],
-    "dogru_cevap": "Uruguay"
+    "question": "İlk dünya kupasını hangi ülke kazanmıştır?",
+    "options": ["Uruguay", "İspanya", "İngiltere", "Brezilya"],
+    "right_answer": "Uruguay"
   }
 ]

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Quiz App</title>
   </head>
   <body>
     <div id="scoreDiv">
@@ -32,10 +32,9 @@
         <button id="reset" onclick="resetGame()">Reset</button>
       </div>
       <div class="result-page" id="result-page">
-        <div>
-          <h1 id="result">Correct</h1>
-          <button onclick="newQuestion()">Next Question</button>
-        </div>
+        <h1 id="result">Correct</h1>
+        <h2 id="real-answer-h2">Doğru Cevap: <span id="real-answer"></span></h2>
+        <button onclick="newQuestion()">Next Question</button>
       </div>
       <div class="empty" id="empty">
         <h2>Başka Soru Kalmadı</h2>
